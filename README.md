@@ -1,7 +1,8 @@
-# Meeting Summarizer for Windows 11
+# Meeting Summarizer for Windows 11 
+
 This project was originally based on [MeetingSummarizer](https://github.com/rajpdus/MeetingSummarizer), but has since evolved into an independent project with new features and goals. This project is tailored for Windows 11 users and provides a CLI utility to record audio from multiple sources and generate summaries of the recorded content. It leverages FFmpeg for audio recording, Whisper for transcription, and OpenAI's GPT model for summarization, offering a streamlined solution for capturing and distilling meeting information on Windows 11 platforms.
 
-## Prerequisites
+## Prerequisites 
 
 - Python: Download and install the latest version of Python from the [official website](https://www.python.org/downloads/) or use your package manager.
 - FFmpeg: Install FFmpeg using a package manager. For Windows, you can use [Chocolatey](https://chocolatey.org/):
@@ -26,13 +27,13 @@ ffmpeg -list_devices true -f dshow -i dummy
 
 - Get the microphone and audio devices names and replace in cli.py file
 
-## Whisper ASR
+## Whisper ASR 
 
 Whisper is an Automatic Speech Recognition (ASR) system developed by OpenAI. It converts spoken language into written text and is trained on a large amount of multilingual and multitask supervised data collected from the web.
 
 repo: [whisper](https://github.com/openai/whisper)
 
-## CLI Utility
+## CLI Utility 
 
 The command-line interface (CLI) utility allows you to record meetings and transcribe and summarize the recordings using the following commands:
 
@@ -56,7 +57,7 @@ python cli.py summarize output.mp3
 
 Replace `output.mp3` with your desired output file name.
 
-## Requirements
+## Requirements 
 
 Install the required Python packages using the following command:
 
@@ -64,10 +65,11 @@ Install the required Python packages using the following command:
 pip install -r requirements.txt
 ```
 
-## Important notes
+## Important notes 
+
 - Change input and output devices to Virtual Audio Device in Windows sounds settings
 - If you using 'Teams' or similar, you need to foward your speakers to the Virtual Audio Device as well.
 
-## License
+## License 
 
 This project is licensed under the [Apache License](LICENSE).
