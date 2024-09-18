@@ -11,6 +11,8 @@ This project was originally based on [MeetingSummarizer](https://github.com/rajp
 choco install ffmpeg-full
 ```
 
+- Virtual Audio Device: Download and install the [Virtual Audio Device](https://vb-audio.com/Cable/index.htm) for Windows.
+
 - OpenAI API Key: Sign up for an account on the [OpenAI platform](https://platform.openai.com/) and obtain your API key.
 
 - Create .env file with the following:
@@ -31,7 +33,7 @@ ffmpeg -list_devices true -f dshow -i dummy
 
 Whisper is an Automatic Speech Recognition (ASR) system developed by OpenAI. It converts spoken language into written text and is trained on a large amount of multilingual and multitask supervised data collected from the web.
 
-repo: [whisper](https://github.com/openai/whisper)
+OpenAI Whisper: [whisper](https://github.com/openai/whisper)
 
 ## CLI Utility 
 
